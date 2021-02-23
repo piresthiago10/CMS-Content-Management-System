@@ -1,5 +1,5 @@
 from django.contrib import admin
-from artigo.models import Artigo, Categoria
+from artigos.models import Artigo, Categoria
 
 
 class Artigos(admin.ModelAdmin):

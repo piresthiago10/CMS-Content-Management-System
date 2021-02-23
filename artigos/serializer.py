@@ -5,8 +5,8 @@ from django.db import models
 from django.db.models import fields
 from rest_framework import serializers
 
-from artigo.models import Artigo, Categoria
-from artigo.validators import *
+from artigos.models import Artigo, Categoria
+from artigos.validators import *
 
 
 class ArtigoSerializer(serializers.ModelSerializer):
