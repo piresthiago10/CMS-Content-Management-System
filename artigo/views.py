@@ -2,12 +2,15 @@ from datetime import date
 
 from django.core.exceptions import ViewDoesNotExist
 from django.db.models.query import QuerySet
-from rest_framework import generics, viewsets
+from rest_framework import generics, status, viewsets
 from rest_framework.authentication import BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from rest_framework.serializers import Serializer
 
 from artigo.models import Artigo, Categoria
-from artigo.serializer import ArtigoSerializer, CategoriaSerializer, ListaArtigoPublicadoAtivoSerializer
+from artigo.serializer import (ArtigoSerializer, CategoriaSerializer,
+                               ListaArtigoPublicadoAtivoSerializer)
 
 
 class ArtigoViewSet(viewsets.ModelViewSet):
