@@ -8,8 +8,8 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.serializers import Serializer
 
-from artigo.models import Artigo, Categoria
-from artigo.serializer import (ArtigoSerializer, CategoriaSerializer,
+from artigos.models import Artigo, Categoria
+from artigos.serializer import (ArtigoSerializer, CategoriaSerializer,
                                ListaArtigoPublicadoAtivoSerializer)
 
 
