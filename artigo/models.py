@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from datetime import date
 
 
 class Categoria(models.Model):
@@ -13,7 +14,7 @@ class Artigo(models.Model):
     titulo = models.CharField(max_length=140)
     texto = models.TextField()
     autor = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
-    data_criacao = models.DateField()
+    data_criacao = models.CharField(max_length=10, default=date.today(), editable=False)
     data_publicacao = models.DateField()
     categoria = models.ForeignKey(
         Categoria, on_delete=models.SET_NULL, null=True)
