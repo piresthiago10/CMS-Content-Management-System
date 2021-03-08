@@ -38,13 +38,6 @@ ctrl + c no terminal
 deactvate
 ```
 
-## Executando os testes:
-
-1. Siga até o passo 3 da Instalação e execute o comando
-```
-python3 manage.py test
-```
-
 ## Ferramentas utilizadas
 
 Informe aqui as ferramentas utilizadas para o desenvolvimento do projeto
